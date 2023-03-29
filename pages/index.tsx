@@ -75,7 +75,15 @@ const Home: NextPage<Notes> = ({ notes }) => {
     }
   }
 
-  async function updateNote(title, content, id) {
+  async function updateNote({
+    title,
+    content,
+    id,
+  }: {
+    title: string;
+    content: string;
+    id: string;
+  }) {
     //console.log(title, content, id)
     setForm({ title, content, id });
     setNewNote(false);
@@ -163,7 +171,7 @@ const Home: NextPage<Notes> = ({ notes }) => {
                   <p className="text-sm">{note.content}</p>
                 </div>
                 <button
-                  onClick={() => updateNote(note.title, note.content, note.id)}
+                  onClick={() => updateNote({ ...note })}
                   className="px-3 text-white bg-blue-500 rounded"
                 >
                   Edit
