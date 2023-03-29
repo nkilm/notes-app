@@ -118,9 +118,7 @@ const Home: NextPage<Notes> = ({ notes }) => {
       </Head>
 
       <h1 className="m-4 text-2xl font-bold text-center">Notes</h1>
-      <p className="my-2 font-medium text-center text-teal-400">
-        Testing CI/CD
-      </p>
+
       <form
         className="w-auto min-w-[25%] max-w-min mx-auto space-y-6 flex flex-col items-stretch"
         onSubmit={(e) => {
