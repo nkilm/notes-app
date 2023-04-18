@@ -12,7 +12,7 @@ export default async function handler(
   const { title, content } = req.body;
 
   try {
-    // CREATE
+    // CREATE NOTE
     await prisma.note.create({
       data: {
         title,
