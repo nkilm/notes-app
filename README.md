@@ -18,6 +18,9 @@
 
 - AWS EC2
 
+## References
+ - [deploying-a-next-app-to-aws-ec2-with-github-actions-cicd](https://srini-dev.hashnode.dev/deploying-a-next-app-to-aws-ec2-with-github-actions-cicd)
+
 ## Contributors
 
 - [Kushagra Singh](https://github.com/KushagraSingh02) - **PES1UG20CS657**
